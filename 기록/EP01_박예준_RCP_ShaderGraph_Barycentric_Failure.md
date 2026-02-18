@@ -1,4 +1,4 @@
-# RCP Shader Graph의 커스텀 속성 지원 부재로 인한 바리센트릭 와이어프레임 구현 실패 및 UV 우회 해결
+# RCP Shader Graph의 커스텀 속성 지원 부재로 인한 바리센트릭 와이어프레임 구현 실패
 
 ## Situation (상황)
 
