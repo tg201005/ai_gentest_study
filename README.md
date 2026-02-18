@@ -27,7 +27,6 @@
 | **강용진** | 주식회사 롸잇 프로덕트 엔지니어 | 공동 주최, 풀스택 개발, 프리토타이핑, 세일즈     | [@yjbenkang](https://github.com/yjbenkang)   |
 | **박예준** | 동국대 컴퓨터AI학과 재학        | 신기술 탐색, 인프라(K8s), 게임 개발              | [@yejunpark3](https://github.com/yejunpark3) |
 | **안선정** | 마일코퍼레이션 제품 개발        | 기획/디자인/개발 전반, AI 기반 워크플로우 자동화 | [@sunjungAn](https://github.com/sunjungAn)   |
-
 | **이태권** | 동국대 산업공학과 / 그래비티벤처스 심사역 | 스터디 주최, DX/AX 실행, Claude Code 기반 개발 | [@tg201005](https://github.com/tg201005) |
 
 ---
