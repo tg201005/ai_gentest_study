@@ -1,0 +1,266 @@
+{
+  "main": {
+    "id": "c1f486632e5d21bf",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf96d07f6c837507",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "daf4dc7c8ccb1c5a",
+            "type": "leaf",
+            "state": {
+              "type": "terminal:documentation",
+              "state": {
+                "terminal:documentation": {
+                  "data": "# Terminal for Obsidian [![release](https://img.shields.io/github/v/release/polyipseity/obsidian-terminal)][latest release] [![Obsidian downloads](https://img.shields.io/badge/dynamic/json?logo=Obsidian&color=%238b6cef&label=downloads&query=$[\"terminal\"].downloads&url=https://raw.githubusercontent.com/obsidianmd/obsidian-releases/master/community-plugin-stats.json)][community plugin] [![Python](https://img.shields.io/badge/Python-≥3.10-gold?labelColor=blue&logo=Python&logoColor=white)][Python]\n\n[Buy Me a Coffee]: https://buymeacoffee.com/polyipseity\n[Buy Me a Coffee/embed]: https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=polyipseity&button_colour=40DCA5&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00\n[Obsidian]: https://obsidian.md/\n[Python]: https://python.org/downloads/\n[changelog]: https://github.com/polyipseity/obsidian-terminal/blob/main/CHANGELOG.md\n[community plugin]: https://obsidian.md/plugins?id=terminal\n[latest release]: https://github.com/polyipseity/obsidian-terminal/releases/latest\n[repository]: https://github.com/polyipseity/obsidian-terminal\n[trailer]: https://raw.githubusercontent.com/polyipseity/obsidian-terminal/main/assets/trailer.png\n[related]: https://github.com/polyipseity/obsidian-monorepo\n\nIntegrate consoles, shells, and terminals inside [Obsidian].\n\n[![Buy Me a Coffee/embed]][Buy Me a Coffee]\n\n__[Repository] · [Changelog] · [Community plugin] · [Related] · [Features](#features) · [Installation](#installation) · [Usage](#usage) · [Contributing](#contributing) · [Security](#security)__\n\n![Trailer]\n\nFor first time users, read the [installation](#installation) section first!\n\nThis file is automatically opened on first install. You can reopen it in settings or command palette.\n\n## Features\n\n- Start external terminals from Obsidian.\n- Integrate terminals into Obsidian.\n- Has an emulated developer console usable on all platforms.\n- Supports multiple terminal profiles.\n- Has built-in keyboard shortcuts.\n- Automatically save and restore integrated terminal history.\n- Find in terminal.\n- Save terminal history as file.\n- Customize terminal appearance.\n\n## Installation\n\n1. Install plugin.\n    - Community plugins\n        1. Install the [plugin][community plugin] from community plugins directly.\n    - Manual\n        1. Create directory `terminal` under `.obsidian/plugins` of your vault.\n        2. Place `manifest.json`, `main.js`, and `styles.css` from the [latest release] into the directory.\n    - Building (rolling)\n        1. Clone this repository, including its submodules.\n        2. Install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).\n        3. Run `npm install` in the root directory.\n        4. Run `npm run obsidian:install <vault directory>` in the root directory.\n    - [Obsidian42 - BRAT](https://obsidian.md/plugins?id=obsidian42-brat) (rolling)\n        - See [their readme](https://github.com/TfTHacker/obsidian42-brat#readme).\n2. (optional for Windows, recommended) Install Python and dependencies.\n    1. Install [Python] 3.10/+.\n    2. (Windows only) Run `pip3 install psutil==5.9.5 pywinctl==0.0.50 typing_extensions==4.7.1`. <!-- Update `README.md`, `magic.ts`, and `requirements.txt` together. -->\n    3. Configure Python executable in profile settings. Press the \"Check\" button to validate the Python configuration. Each profile needs to be configured separately.\n3. Enable plugin.\n4. (optional) Configure plugin settings.\n\n## Usage\n\n- To start a new external or integrated terminal\n  - Ribbon\n      1. Click on the `Open terminal` ribbon.\n      2. Choose the desired profile.\n  - Context menu\n      1. Right-click on files, folders, or tab headers.\n      2. Choose the desired action \\(and profile\\).\n  - Command palette\n      1. Press `Ctrl`+`P` or click on the `Open command palette` ribbon next to the left window border.\n      2. Choose the desired action \\(and profile\\).\n  - Select profile modal\n      1. Choose the desired profile. Press `Ctrl` to edit the profile before use. The item `(Temporary profile)` starts a terminal with a temporary profile.\n- To save and restore integrated terminal history\n    1. Keep the terminal open when exiting Obsidian.\n    2. Terminal history will be restored next time Obsidian is opened.\n- Additional actions\n  - Includes\n    - Clear terminal: \\(1\\), \\(4\\)\n    - Copy terminal: \\(1\\)\n    - Edit terminal: \\(1\\)\n    - Export, import, or edit settings: \\(2\\), \\(3\\)\n    - Find in terminal: \\(1\\), \\(4\\)\n    - Open documentation: \\(2\\), \\(3\\)\n    - Restart terminal: \\(1\\)\n    - Save terminal history: \\(1\\)\n  - Available by\n    - \\(1\\) Right-click on tab header/`More options`\n    - \\(2\\) Open settings\n    - \\(3\\) Open command palette\n    - \\(4\\) Use keyboard shortcuts\n\n### Keyboard shortcuts\n\nThe keyboard shortcuts can be customized in hotkeys settings.\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Global__\n\n- Toggle focus on last terminal: `Ctrl`+`Shift`+`` ` ``\n  - Focus on last terminal: \\(unbound; useful if you want separate keys for focus and unfocus\\)\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Terminal is focused__\n\nWhen a terminal is focused, other keyboard shortcuts \\(including Obsidian and plugin hotkeys\\) are disabled. Only the following keyboard shortcuts work. Thus you can ignore Obsidian complaining about conflicting keys for the following keyboard shortcuts.\n\n- Clear terminal: `Ctrl`+`Shift`+`K`, `Command`+`Shift`+`K` \\(Apple\\)\n- Close terminal: `Ctrl`+`Shift`+`W`, `Command`+`Shift`+`W` \\(Apple\\)\n- Find in terminal: `Ctrl`+`Shift`+`F`, `Command`+`Shift`+`F` \\(Apple\\)\n- Toggle focus on last terminal: `Ctrl`+`Shift`+`` ` `` \\(same as above\\)\n  - Unfocus terminal: \\(unbound; useful if you want separate keys for focus and unfocus\\)\n\n### Theming\n\nTheming is possible. However, there is no user-friendly interface for now.\n\n1. Open the profile editing modal.\n2. Click on the `Edit` button labeled `Data`. It should open up a new modal in which there is a large textbox.\n3. Notice `terminalOptions` in the text area labeled `Data`. Refer to the [`xterm.js` documentation](https://github.com/xtermjs/xterm.js/blob/master/typings/xterm.d.ts#L26) (`ITerminalOptions`) to set the options. Nested objects may need to be used.\n4. Save the profile. Changes should apply immediately.\n\n### Profiles\n\nThis plugin comes with several profile presets that you can reference.\n\nWhen setting up a terminal profile, you need to distinguish between shells and terminal emulators. (Search online if needed.) Generally, integrated profiles only work with shells while external ones only work with terminal emulators.\n\n#### Examples\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Shells__\n\n- Bash: `bash --login`\n- Bourne shell: `sh`\n- Command Prompt: `cmd`\n- Dash: `dash`\n- Git Bash: `<Git installation>\\bin\\bash.exe --login` (e.g. `C:\\Program Files\\Git\\bin\\bash.exe`)\n- PowerShell Core: `pwsh`\n- Windows PowerShell: `powershell`\n- Windows Subsystem for Linux: `wsl` or `wsl -d <distribution name>`\n- Z shell: `zsh --login`\n\n<!-- markdownlint-disable-next-line MD036 -->\n__Terminal emulators__\n\n- Command Prompt: `cmd`\n- GNOME Terminal: `gnome-terminal`\n- Konsole: `konsole`\n- Terminal (macOS): `/System/Applications/Utilities/Terminal.app/Contents/macOS/Terminal \"$PWD\"`\n- Windows Terminal: `wt`\n- iTerm2: `/Applications/iTerm.app/Contents/MacOS/iTerm2 \"$PWD\"`\n- xterm: `xterm`\n\n### Miscellaneous\n\nThis plugin patches `require` so that `require(\"obsidian\")` and other Obsidian modules work in the developer console. It is toggleable as `Expose internal modules` in settings.\n\nIn the developer console, a context variable `$$` is passed into the code, which can be used to dynamically change terminal options.\n\nThe full API is available from [`src/@types/obsidian-terminal.ts`](src/%40types/obsidian-terminal.ts).\n\n### Troubleshooting\n\n- Is the plugin useful on mobile?\n  - Compared to on desktop, it is much less useful. The only use for it for now is opening a developer console on mobile.\n- Why do hotkeys not work?\n  - If the terminal is in focus, all Obsidian hotkeys are disabled so that you can type special characters into the terminal. You can unfocus the terminal by pressing `Ctrl`+`Shift`+`` ` ``, then you can use Obsidian hotkeys again.\n\n## Contributing\n\nContributions are welcome!\n\nThis project uses [`changesets`](https://github.com/changesets/changesets) to manage the changelog. When creating a pull request, please [add a changeset](https://github.com/changesets/changesets/blob/main/docs/intro-to-using-changesets.md#adding-changesets) describing the changes. Add multiple changesets if your pull request changes several things. End each changeset with `([PR number](PR link) by [author username](author link))`. For example, the newly created file under the directory `.changeset` should look like:\n\n```Markdown\n---\n\"example\": patch\n---\n\nThis is an example change. ([GH#1](https://github.com/ghost/example/pull/1) by [@ghost](https://github.com/ghost))\n```\n\n### Todos\n\nThe todos here, ordered alphabetically, are things planned for the plugin. There are no guarantees that they will be completed. However, we are likely to accept contributions for them.\n\n- Connect to remote shells.\n- Detect sandboxed environment and notify users.\n- External link confirmation.\n- Filter console log by severity in the developer console.\n- Indicate that the terminal resizer has crashed or is disabled.\n- Shared terminal tabs.\n- Vim mode switch.\n\n### Translating\n\nSee [`assets/locales/README.md`](assets/locales/README.md).\n\n## Security\n\nWe hope that there will never be any security vulnerabilities, but unfortunately it does happen. Please [report](#reporting-a-vulnerability) them!\n\n### Supported versions\n\n| Version  | Supported |\n| -------- | --------- |\n| rolling  | ✅        |\n| latest   | ✅        |\n| outdated | ❌        |\n\n### Reporting a vulnerability\n\nPlease report a vulnerability by opening an new issue. We will get back to you as soon as possible.\n",
+                  "displayTextI18nKey": "translation:generic.documentations.readme",
+                  "iconI18nKey": "asset:generic.documentations.readme-icon"
+                }
+              },
+              "icon": "file-question",
+              "title": "Readme"
+            }
+          }
+        ]
+      },
+      {
+        "id": "367dda734dcfd42e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db6b1f9c0b4715e7",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/leetaekwon/Desktop/AITESTUDY",
+                  "focus": false,
+                  "profile": {
+                    "args": [
+                      "--login"
+                    ],
+                    "executable": "/bin/zsh",
+                    "followTheme": true,
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "터미널: ✳ Insert Operation"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "821e71e9a58c9e39",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0d2cc6626cb4994",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0dbcf379463bdd70",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "f9a1f46b5a499598",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "9e86ec773d581947",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "de308744d6f56ed0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a4effc8346b5bbe2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f6f443cbb6541ce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "833efca24bd62a21",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "f62c8e13d238a12b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "4469222db76c2a5a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "411ac69441d468c4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "terminal:Open terminal": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "daf4dc7c8ccb1c5a",
+  "lastOpenFiles": [
+    "회의록/2026년 2월 15일 회의록.md",
+    "Episode/회의록/2026년 2월 15일 회의록.md",
+    "Episode/회의록/2026년 2월 15일 스크립트.md",
+    "Episode/회의록",
+    "기록/EP1_멤버A_CC로_내부 관리페이지_만들다_삽질한_이야기.md",
+    "README.md",
+    "템플릿/에피소드_회의록_템플릿.md",
+    "템플릿/STARL_템플릿.md",
+    "템플릿",
+    "기록/멤버A",
+    "기록/안선정",
+    "기록/박예준",
+    "기록/강용진",
+    "기록",
+    "실수.md",
+    "PROJECT.md",
+    "Episode/EP0.md",
+    "Episode",
+    "무제 1.md",
+    "무제 2.md",
+    "라벨링/실수_라벨링_데닛.md",
+    "회의록/2026년 2월 15일 스크립트.md",
+    "무제.md",
+    "라벨링",
+    "회의록/?tab=t.8x68k9kasd7x.md",
+    "회의록",
+    "무제 1.canvas",
+    "2026-02-15.md",
+    "무제.canvas"
+  ]
+}
