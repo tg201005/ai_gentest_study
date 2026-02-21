@@ -6,7 +6,7 @@
       {
         "id": "bf96d07f6c837507",
         "type": "tabs",
-        "dimension": 49.03846153846153,
+        "dimension": 68.80733944954129,
         "children": [
           {
             "id": "daf4dc7c8ccb1c5a",
@@ -26,37 +26,21 @@
             "id": "f5f541835ddd7287",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "기록/EP1_멤버A_개인정보파일의 대량발송 자동화에서 배운 QA 설계의 중요성.md",
-                "mode": "source",
-                "source": false
+                "file": "사진/Screenshot 2026-02-22 at 7.42.05 AM.png"
               },
-              "icon": "lucide-file",
-              "title": "EP1_멤버A_개인정보파일의 대량발송 자동화에서 배운 QA 설계의 중요성"
-            }
-          },
-          {
-            "id": "9d1260e3bb3b6086",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "무제.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "무제"
+              "icon": "lucide-image",
+              "title": "Screenshot 2026-02-22 at 7.42.05 AM"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "367dda734dcfd42e",
         "type": "tabs",
-        "dimension": 50.96153846153846,
+        "dimension": 31.19266055045872,
         "children": [
           {
             "id": "d6de23c12613d06b",
@@ -97,7 +81,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "터미널: ✳ 개인정보 제거 커밋"
+              "title": "터미널: ⠐ 코드 정리 및 재배치"
             }
           }
         ]
@@ -157,7 +141,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.5
+    "width": 385.5
   },
   "right": {
     "id": "de308744d6f56ed0",
@@ -233,13 +217,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "무제.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "무제 의 개요"
+              "title": "개요"
             }
           }
         ],
@@ -261,17 +244,25 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "9d1260e3bb3b6086",
+  "active": "d6de23c12613d06b",
   "lastOpenFiles": [
-    "무제.md",
+    "사진/Screenshot 2026-02-22 at 7.42.05 AM.png",
+    "사진/Screenshot 2026-02-22 at 7.40.35 AM.png",
+    "사진/Screenshot 2026-02-22 at 7.57.56 AM.png",
+    "사진/EP1_문제 제기 - 어떻게 generate하고 test 할 것인가?.md",
     "기록/EP1_멤버A_개인정보파일의 대량발송 자동화에서 배운 QA 설계의 중요성.md",
     "기록/EP1_멤버A_CC로_내부 관리페이지_만들다_삽질한_이야기.md",
-    "기록/EP1_안선정_Figma_Notion_MCP로_개발_자동화_구축기.md",
+    "사진/Screenshot 2026-02-22 at 7.44.07 AM.png",
+    "사진/Screenshot 2026-02-22 at 7.30.22 AM.png",
+    "사진",
+    "사진/Screenshot 2026-02-22 at 7.29.48 AM.png",
     "README.md",
+    "템플릿/STARL_템플릿.md",
     "템플릿/에피소드_회의록_템플릿.md",
     "기록/EP01_박예준_RCP_ShaderGraph_Barycentric_Failure.md",
     "기록/EP1_강용진_인수인계_커서_글로벌과_프로젝트_세팅으로_적응.md",
-    "템플릿/STARL_템플릿.md",
+    "Episode/EP0.md",
+    "기록/EP1_안선정_Figma_Notion_MCP로_개발_자동화_구축기.md",
     "회의록/2026년 2월 15일 회의록.md",
     "Episode/회의록/2026년 2월 15일 회의록.md",
     "Episode/회의록/2026년 2월 15일 스크립트.md",
@@ -284,7 +275,6 @@
     "기록",
     "실수.md",
     "PROJECT.md",
-    "Episode/EP0.md",
     "Episode",
     "무제 1.md",
     "무제 2.md",
@@ -292,7 +282,6 @@
     "회의록/2026년 2월 15일 스크립트.md",
     "라벨링",
     "회의록/?tab=t.8x68k9kasd7x.md",
-    "회의록",
     "무제 1.canvas",
     "2026-02-15.md",
     "무제.canvas"
