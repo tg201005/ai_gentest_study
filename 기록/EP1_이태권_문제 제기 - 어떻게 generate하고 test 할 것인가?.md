@@ -1,5 +1,4 @@
 
-
 어떻게 해당 프로세스의 신뢰성을 담보할 수 있을 것인가?
 
 ### 공통된 문제 의식
@@ -41,13 +40,9 @@
 
 
 
-<https://claude.ai/public/artifacts/b4a762f6-fdd3-4495-9613-48243802d299>
-
-<https://docs.google.com/document/d/1wwos8D3HwVWRpVqRIZfl4o7Y73oecxLxaSVOPdxhj1s/edit?usp=sharing>
-
-<https://blog.davidlapsley.io/engineering/process/best%20practices/ai-assisted%20development/2026/01/11/spec-driven-development-with-llms.html>
-
-<https://blog.davidlapsley.io/engineering/process/best%20practices/ai-assisted%20development/2026/01/12/sdld-specification-format.html#:~:text=Every%20feature%20in%20an%20SDLD,specific%20directory>
+**참고 자료:**
+- David Lapsley, "Spec-Driven Development with LLMs" (2026)
+- David Lapsley, "SDLD Specification Format" (2026)
 
 
 
