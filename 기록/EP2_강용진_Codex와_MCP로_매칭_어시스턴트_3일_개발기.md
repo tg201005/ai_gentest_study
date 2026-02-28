@@ -9,7 +9,7 @@
 ## Situation (상황)
 
 - **문제 상황:** "매칭신청서 작성 어시스턴트"(AI 챗봇 기반 풀스택 기능)를 3일 안에 개발·배포해야 했다. UI/UX 전문가가 아니고 프론트엔드에 익숙하지 않은 상태에서, 채팅 UI부터 AI 챗봇 로직·DB 스키마까지 풀스택을 빠르게 완성해야 했다. 에이전틱 AI를 별 다른 세팅 없이 사용한다면 AI와 핑퐁을 여러 번 해야 하고, 결과물이 마음에 안 들어 수정을 반복하면 3일 안에 원활히 끝낼 수 없다고 판단했다.
-- **사용 도구:** Codex (codex-5.3-max) + Context7, Sequential Thinking, 웹 브라우징 MCP, Desktop Commander, Frontend Design Skill
+- **사용 도구:** Codex (gpt-5.3-codex) + Context7, Sequential Thinking, 웹 브라우징 MCP, Desktop Commander, Frontend Design Skill
 - **배경:** 이번엔 "처음부터 고성능 모델 + MCP + 스킬을 풀세팅해서 한 번에 제대로 뽑자"는 접근으로 시작했다.
 
 ## Task (과제)
