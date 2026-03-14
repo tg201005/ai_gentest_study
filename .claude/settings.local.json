@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/gang-yongjin -maxdepth 5 -name .cursorrules -o -name rules -path */cursor/*)"
+    ]
+  }
+}
